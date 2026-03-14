@@ -36,7 +36,7 @@ def sep(string: str) -> list:
         num += 1
 
 
-def summ(nums) -> int:
+def summ(nums: list) -> int:
     ans = 0
     for i in nums:
         ans += i
