@@ -1,8 +1,8 @@
-from math import sqrt
+import math
 
 
 def calculate_distance(point1: tuple, point2: tuple) -> float:
-    return sqrt((point2[0] - point1[0])**2 +
+    return math.sqrt((point2[0] - point1[0])**2 +
                 (point2[1] - point1[1])**2 +
                 (point2[2] - point1[2])**2)
 
@@ -31,5 +31,6 @@ except ValueError as e:
     print(f"Error parsing coordinates: {e}")
     print(f"Error details - Type: ValueError, Args: (\"{e}\",)")
 print("\nUnpacking demonstration:")
-print(f"Player at x={pointt[0]}, y={pointt[1]}, z={pointt[2]}")
-print(f"Coordinates: X={pointt[0]}, Y={pointt[1]}, z={pointt[2]}")
+x, y, z = pointt
+print(f"Player at x={x}, y={y}, z={z}")
+print(f"Coordinates: X={x}, Y={y}, Z={z}")

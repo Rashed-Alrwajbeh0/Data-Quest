@@ -2,6 +2,7 @@ import sys
 args = sys.argv
 num = len(args)
 if num == 1:
+    print("=== Command Quest ===")
     print("No arguments provided!\n"
           f"Program name: {args[0]}\n"
           f"Total arguments: {num}")
